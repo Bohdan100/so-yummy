@@ -4,7 +4,7 @@ application leverages **MongoDB** as the primary database and offers secure user
 recipes and ingredients.
 
 ## Features
-- **Authentication API** powered by **Spring Security** with a custom JWT filter** for secure user registration, login, and logout.
+- **Authentication API** powered by **Spring Security** with a custom **JWT filter** for secure user registration, login, and logout.
 - **Secure Token-Based Authentication** implemented using **JSON Web Tokens (JWTs)** to ensure secure user access to application resources.
 - Structured and organized JSON data storage backed by **Mongo DB**.
 - **CRUD operations** available through RESTful API endpoints for the following collections:
