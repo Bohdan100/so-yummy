@@ -3,6 +3,8 @@ The **So-Yummy Application** is a Spring Boot application written in **Kotlin** 
 experience. The application leverages **MongoDB** as the primary database and offers secure user authentication with token-based security and functionalities for creating, searching, and managing 
 favorite recipes and ingredients.
 
+## The project is in the process of being converted to Docker containerization!!!
+
 ## Features
 - **Authentication API** powered by **Spring Security** with a custom **JWT filter** for secure user registration, login, and logout.
 - **Secure Token-Based Authentication** implemented using **JSON Web Tokens (JWTs)** to ensure secure user access to application resources.
@@ -24,8 +26,6 @@ The following configurations are required to launch the project:
 - **Spring Boot**: 4.0.2
 - **Docker**: 29.1.3
 - **Kotlin**: 2.3.0
-
-## The project is in the process of being converted to Docker containerization!!!
 
 ## Database Setup
 Before running the application, follow these steps to set up the database:
