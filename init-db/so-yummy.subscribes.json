@@ -1,0 +1,107 @@
+[{
+  "_id": {
+    "$oid": "643473ae86c4c24c2946bfa9"
+  },
+  "owner": {
+    "$oid": "6431d37d34a783fc11633793"
+  },
+  "email": "zay_nik@ukr.net"
+},
+{
+  "_id": {
+    "$oid": "6435466e98e56cf375a606b1"
+  },
+  "owner": {
+    "$oid": "6431c7a334a783fc11631091"
+  },
+  "email": "rosie@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "64359366b437f337f213cb6a"
+  },
+  "owner": {
+    "$oid": "6431b8c51834e4319c89754b"
+  },
+  "email": "xixas91548@djpich.com"
+},
+{
+  "_id": {
+    "$oid": "6435a1bab437f337f213cfb6"
+  },
+  "owner": {
+    "$oid": "642aab28df74f54eedf8c566"
+  },
+  "email": "olya.sonechko@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "643677130d6d675de9d1979c"
+  },
+  "owner": {
+    "$oid": "64366faa0d6d675de9d19560"
+  },
+  "email": "i.dashkova@goit.ua"
+},
+{
+  "_id": {
+    "$oid": "6438553171413c95ac01d120"
+  },
+  "owner": {
+    "$oid": "6438552671413c95ac01d117"
+  },
+  "email": "hshs@bhk.com"
+},
+{
+  "_id": {
+    "$oid": "6439932a483338026c426cb5"
+  },
+  "owner": {
+    "$oid": "643992d2483338026c426c8e"
+  },
+  "email": "ridan128@ukr.net"
+},
+{
+  "_id": {
+    "$oid": "643aae4eba57dce795c21939"
+  },
+  "owner": {
+    "$oid": "64317e9e2dafd51f9a37f32f"
+  },
+  "email": "QQQ@SD.SD"
+},
+{
+  "_id": {
+    "$oid": "643d7882e0d73319b325f2aa"
+  },
+  "owner": {
+    "$oid": "64318c2a1834e4319c88e5e0"
+  },
+  "email": "vlad.shepetskiy@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6443fa1de19416a7bb1bdd42"
+  },
+  "owner": {
+    "$oid": "64383243c4567a907f303c92"
+  },
+  "email": "anna.lisicina9309@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "64bd3ab8c6c74dc55e376201"
+  },
+  "owner": {
+    "$oid": "64addf4d78996aa84d343b32"
+  },
+  "email": "full-stack@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "67939023b2f9787bec93f376"
+  },
+  "owner": "64383243c4567a907f303c92",
+  "email": "anna.lisicina459309@gmail.com",
+  "_class": "corp.soyummy.subscribes.Subscribe"
+}]

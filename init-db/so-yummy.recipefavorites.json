@@ -1,0 +1,701 @@
+[{
+  "_id": {
+    "$oid": "64298def3fa4011d0d33c9ea"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f0"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "642ead8517d0f4def03cc67b"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f3"
+  },
+  "amount": 4
+},
+{
+  "_id": {
+    "$oid": "642ee21f96332264242699fc"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889864"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "642ee9509633226424269a8e"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f2"
+  },
+  "amount": 5
+},
+{
+  "_id": {
+    "$oid": "642f338e6b52e8b9f2e12412"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f4"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "642f33bc6b52e8b9f2e1242d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f5"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64307346e2d754d8e3549fe0"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889808"
+  },
+  "amount": 12
+},
+{
+  "_id": {
+    "$oid": "64307d07e2d754d8e354a0bb"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f8"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "643127dc9799b1abed6c9e2c"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889863"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "64312e399799b1abed6c9f0b"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889838"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "6431b1f01834e4319c8967bc"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f7"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6431bb9c1834e4319c89772c"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889849"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "6431c09a1834e4319c89836b"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889874"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6431c1e71834e4319c89a638"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889811"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "6431c20b1834e4319c89a68e"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889826"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "6431c74f34a783fc1163102b"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889815"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6431c9ba34a783fc116313fd"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889804"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "6431e89f34a783fc1163681d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889800"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6431e8aa34a783fc11636831"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889835"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6431e8b734a783fc11636843"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88981f"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "64327f98630377a200440b8d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889833"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6432925d630377a20044115d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f1"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6432ebbf630377a200442baf"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88981d"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6432f2eb630377a200442e72"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889803"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "6432f4fd630377a200442ec9"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898aa"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64333651afd77c698116461f"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889859"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6433366bafd77c6981164648"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889890"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64333fedafd77c698116483e"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898a6"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64333ff9afd77c698116485f"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889813"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64334004afd77c6981164884"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889825"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64334628afd77c6981164a91"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889805"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64334633afd77c6981164ab2"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898a2"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64334640afd77c6981164ad5"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88981a"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "6433464bafd77c6981164afa"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88982c"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64335034afd77c6981164ca4"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889851"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6433b50b4bd957fd6a097462"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889855"
+  },
+  "amount": 17
+},
+{
+  "_id": {
+    "$oid": "6433fd2d211310fde8f6df0f"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889802"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64341b01211310fde8f6e27c"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f9"
+  },
+  "amount": 3
+},
+{
+  "_id": {
+    "$oid": "64341b07211310fde8f6e295"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889831"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64343be0211310fde8f6e6f4"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889852"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64344403211310fde8f6eb41"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889812"
+  },
+  "amount": 4
+},
+{
+  "_id": {
+    "$oid": "6434440f211310fde8f6eb5a"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88983f"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64344423211310fde8f6eb7d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88980a"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6434442e211310fde8f6eb93"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889827"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6435970cb437f337f213cbf4"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88983a"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64359ecbb437f337f213ced5"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88988e"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6435a868aa0afad3b044b6e8"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898b1"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6436561313b0ec3c14d47736"
+  },
+  "recipe": {
+    "$oid": "643655ff13b0ec3c14d47704"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64367154e993d9be986bbf53"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897f6"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64367165e993d9be986bbf5a"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889821"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "64367180e993d9be986bbf6d"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88982e"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "643673de0d6d675de9d19674"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898a3"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6436a515d33c2213c08eb082"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898a8"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6436dfb7022e40d47426b7fe"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889840"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6436e056022e40d47426b913"
+  },
+  "recipe": {
+    "$oid": "6435eebd10a4676a48f8eab6"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64383282c4567a907f303cb8"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898df"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "643841e042abc93e4294982a"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88984e"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "6438431842abc93e42949954"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898a9"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6438490642abc93e42949b4e"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889819"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6439a7c9483338026c426db4"
+  },
+  "recipe": {
+    "$oid": "6438420e42abc93e429498b6"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "643c39dfb7fc59e59f3391ab"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898e2"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "643cfe0d3b89d7f780ead2c3"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897fd"
+  },
+  "amount": 2
+},
+{
+  "_id": {
+    "$oid": "643d0c453b89d7f780ead4d9"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889839"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "6443fa3ae19416a7bb1bdd4c"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8897fa"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "6475c7abd694bb49886ef366"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e8898f2"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64aa643396c84ecf94b147bf"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88980b"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64aee9f3ef41a3058fe13c3a"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889814"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64b7a9c81e7bfae64e5cc2c1"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889801"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64b7a9d71e7bfae64e5cc2e1"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889806"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64b7a9db1e7bfae64e5cc2f0"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889856"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64b7a9e01e7bfae64e5cc2ff"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88985b"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64b7a9e71e7bfae64e5cc30e"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889818"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64bd38f8c6c74dc55e376090"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88982f"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64bd3927c6c74dc55e3760fb"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889841"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64bd392cc6c74dc55e376112"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889887"
+  },
+  "amount": 0
+},
+{
+  "_id": {
+    "$oid": "64bd59b9e2773465a1566253"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e889830"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "64bd59e4e2773465a15662a4"
+  },
+  "recipe": {
+    "$oid": "640cd5ac2d9fecf12e88980d"
+  },
+  "amount": 1
+},
+{
+  "_id": {
+    "$oid": "679441c83c9b9f1b2c16ca30"
+  },
+  "recipe": "640cd5ac2d9fecf12e8897f6",
+  "amount": 9,
+  "_class": "corp.soyummy.recipefavorites.RecipeFavorite"
+}]

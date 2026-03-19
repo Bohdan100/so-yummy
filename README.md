@@ -18,15 +18,14 @@ favorite recipes and ingredients.
 - Streamlined setup and build processes using **Gradle**.
 
 ## Requirements
-The application is built using the following technologies:
-- **Spring Boot**: 3.3.5
-- **Kotlin**: 1.9.25
-- **Java Platform (JDK)**: 21
-- **MongoDB**: 2.0.0
-- **JJWT**: 0.12.6
-- **Lombok**: 1.18.36
-- **JUnit**: 5
-- **Gradle**: 8.8
+The following configurations are required to launch the project:
+- **Java Platform (JDK)**: 25
+- **Gradle**: 9.2.0
+- **Spring Boot**: 4.0.2
+- **Docker**: 29.1.3
+- **Kotlin**: 2.3.0
+
+## The project is in the process of being converted to Docker containerization!!!
 
 ## Database Setup
 Before running the application, follow these steps to set up the database:

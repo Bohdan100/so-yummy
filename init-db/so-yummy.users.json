@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "642ecf64892a8f8247e1a288"
+  },
+  "name": "Testing",
+  "email": "test21@test.net",
+  "password": "$2a$10$/66npUDmUyGbMEMNI2bkpuO97SFcSdIAT8Ram38BKErwI.wWJfQDO",
+  "avatar": "https://res.cloudinary.com/ddbvbv5sp/image/upload/v1679336722/images_s8wrdd.jpg",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmVjZjY0ODkyYThmODI0N2UxYTI4OCIsImlhdCI6MTY4MDc4OTM0OSwiZXhwIjoxNjgwODc1NzQ5fQ.7bZybLm-hhz5qQek2nhPuR1vqSaxUDrMGIU7_h9VGK8",
+  "createdAt": {
+    "$date": "2023-04-06T13:55:48.906Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-06T13:55:49.117Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "643188c92dafd51f9a37f57d"
+  },
+  "name": "Test",
+  "email": "test22@test.net",
+  "password": "$2a$10$ptqwlEqGlzFShBYC8FY1x.01rVXT8lldmpf5cC0ddOiZObd3RgHtO",
+  "avatar": "https://res.cloudinary.com/db5awxaxs/image/upload/v1680863981/%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_1_sycrzf.jpg",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4OGM5MmRhZmQ1MWY5YTM3ZjU3ZCIsImlhdCI6MTY4MTQwNDc1NSwiZXhwIjoxNjgxNDkxMTU1fQ.XoSnvvfh-NDdkoot6PdUEQMYT5xjwZ_tUsj4_nL1uCQ",
+  "createdAt": {
+    "$date": "2023-04-08T15:31:21.436Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-13T16:52:35.434Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64ada192175f1bcf51d7ff8f"
+  },
+  "name": "marina",
+  "email": "marina@gmail.com",
+  "password": "$2a$10$ZEdiTKxcbU1o36a9MIFtDexqLH5Ih.dnndDLCf7BEta2M2N.i5vQ6",
+  "avatar": "https://res.cloudinary.com/db5awxaxs/image/upload/v1680863981/%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_1_sycrzf.jpg",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWRhMTkyMTc1ZjFiY2Y1MWQ3ZmY4ZiIsImlhdCI6MTY4OTEwMDY5MCwiZXhwIjoxNjg5MTg3MDkwfQ.MHezOOARgJHSXcc_t6bQ9TgZ_d-iZIeqmn-VJw-ZGDQ",
+  "createdAt": {
+    "$date": "2023-07-11T18:38:10.254Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-11T18:38:10.351Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64addf4d78996aa84d343b32"
+  },
+  "name": "FullStack",
+  "email": "full-stack@gmail.com",
+  "password": "$2a$10$FhsO7HJGjmT32qGx6015c.uem7lWDbXA724OWlEgJ0cJjxtQyvOXK",
+  "avatar": "https://res.cloudinary.com/db5awxaxs/image/upload/v1680863981/%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_1_sycrzf.jpg",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWRkZjRkNzg5OTZhYTg0ZDM0M2IzMiIsImlhdCI6MTY5NzE1NDg4NCwiZXhwIjoxNjk3MTU4NDg0fQ.oLJgLUEbnAB8oG5gJ-k2TQDtZXL3-q6vVWyDNB5bo7g",
+  "createdAt": {
+    "$date": "2023-07-11T23:01:33.807Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-12T23:54:44.495Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c96952472e5b2e4d2da01f"
+  },
+  "name": "123",
+  "email": "123@gmail.com",
+  "password": "$2a$10$vcT1LnL287ZtTAJo8aAnS.5F/w7XVqO52Hh/lUSGoKZqbVx1oTex2",
+  "avatar": "https://res.cloudinary.com/db5awxaxs/image/upload/v1680863981/%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_1_sycrzf.jpg",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Yzk2OTUyNDcyZTViMmU0ZDJkYTAxZiIsImlhdCI6MTc0MTI1Mjk0NiwiZXhwIjoxNzQxMjU2NTQ2fQ.kviCb6jguw-gb0DOxjzAlFmIo6oCNEkcZkvus2kRiVE",
+  "createdAt": {
+    "$date": "2025-03-06T09:22:26.495Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-06T09:22:26.601Z"
+  }
+}]

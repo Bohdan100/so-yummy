@@ -16,10 +16,13 @@ class AuthService(
 ) {
 
     fun register(request: RegisterDTO, role: Role): String {
+        val encodedPassword = passwordEncoder.encode(request.password)
+            ?: throw IllegalStateException("Password encoding failed")
+
         val user = User(
             name = request.name,
             email = request.email,
-            password = passwordEncoder.encode(request.password),
+            password = encodedPassword,
             role = role
         )
 

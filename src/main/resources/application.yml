@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: docker
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@mongodb:27017/so-yummy?authSource=admin
+
+token:
+  signing:
+    key: ${TOKEN_KEY}
+
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
+    com.soyummy: DEBUG

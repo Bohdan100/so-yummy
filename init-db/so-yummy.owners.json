@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "67911ba5171e5c4585004236"
+  },
+  "name": "Steve",
+  "email": "steve@gmail.com",
+  "password": "$2a$10$9aBwRVTOG0qr52wl9Wvsc.Y6SmZlVB3lSLO2rgfLD3xJ8.gTJlFsO",
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdGV2ZUBnbWFpbC5jb20iLCJpYXQiOjE3Njg5NDkyOTUsImV4cCI6MTc2ODk1NjQ5NX0.fT2B5ZVSvoIhiYMCT4ZEL5ujPpTwEbAD-3Qib4dMUT0",
+  "role": "USER",
+  "createdAt": {
+    "$date": "2025-01-22T16:24:05.555Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-20T22:48:15.691Z"
+  },
+  "_class": "corp.soyummy.auth.User"
+}]
