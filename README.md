@@ -79,7 +79,8 @@ The following configurations are required to launch the project:
 
 ---
 
-### Important: After successful authentication, include the Bearer token in the Authorization header for all subsequent requests:
+#### Important: 
+#### After successful authentication, include the Bearer token in the Authorization header for all subsequent requests:
 
 ### 2. Ingredients Endpoints
 
@@ -132,9 +133,11 @@ The following configurations are required to launch the project:
 - **Delete Recipe**: [http://localhost:8080/api/v1/recipes/{id}](http://localhost:8080/api/v1/recipes/{id})
     - `DELETE`: Deletes a recipe by its ID.
 
-### 3. Additional Endpoints
+---
 
-**Collection**: **Base URL**
+### 4. Additional Endpoints
+
+**Collection**: **base URL**
 
 * Recipe Favorites: http://localhost:8080/api/v1/recipefavorites
 * User Favorites: http://localhost:8080/api/v1/userfavorites
