@@ -3,7 +3,8 @@
 **So-Yummy** is a production-grade **RESTful API** service developed with **Kotlin** and the **Spring Boot** framework,
 crafted to celebrate healthy cooking through effortless recipe and ingredient management. Containerized using **Docker**
 for consistent deployment across development, testing, and production environments, the platform transforms how users
-discover, organize, and share nutritious meals—making healthy eating both accessible and enjoyable.
+discover, organize, and share nutritious meals - making healthy eating both accessible and enjoyable. 
+
 The application leverages **MongoDB** as its primary NoSQL database for flexible, document-based data storage, while
 implementing **token-based authentication** via **JSON Web Tokens (JWTs)** to ensure secure user access. Through its
 comprehensive RESTful API, users can create, search, and manage personalized collections of favorite recipes and
