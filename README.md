@@ -19,8 +19,8 @@ ingredients, enabling a complete culinary ecosystem from discovery to preparatio
 * **Modern Development with Kotlin:** Leverage Kotlin's concise syntax, null safety, and data classes to enhance code
   readability, reduce boilerplate, and improve maintainability.
 * Structured and organized JSON data storage backed by **Mongo DB**.
-* **Containerized Deployment with Docker:** Seamlessly build and run the entire ecosystem—including the Spring Boot
-  application and MySQL database—using Docker and Docker Compose for consistent, "one-command" environment setup.
+* **Containerized Deployment with Docker:** Seamlessly build and run the entire ecosystem — including the Spring Boot
+  application and MySQL database — using Docker and Docker Compose for consistent, "one-command" environment setup.
 * **CRUD operations** available through RESTful API endpoints for the following collections:
     - Recipes
     - Ingredients
