@@ -6,9 +6,9 @@ services:
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_DATABASE: so-yummy
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER:-admin}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-secret123}
+      MONGO_INITDB_DATABASE: ${MONGO_DB}
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
     volumes:
       - mongo_data:/data/db
       - ./init-db:/docker-entrypoint-initdb.d
@@ -27,9 +27,11 @@ services:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - MONGO_USER=${MONGO_USER:-admin}
-      - MONGO_PASSWORD=${MONGO_PASSWORD:-secret123}
-      - TOKEN_KEY=${TOKEN_SIGN_KEY:-my_super_secret_key_2026_default}
+      - MONGO_HOST=mongodb
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_DB=${MONGO_DB}
+      - TOKEN_KEY=${TOKEN_KEY}
     depends_on:
       mongodb:
         condition: service_healthy

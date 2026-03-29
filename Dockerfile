@@ -1,4 +1,3 @@
-# Stage 1: Build
 FROM eclipse-temurin:25-jdk AS build
 WORKDIR /app
 
@@ -19,4 +18,4 @@ COPY --from=build /app/build/libs/*.jar app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar", "--spring.profiles.active=docker"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

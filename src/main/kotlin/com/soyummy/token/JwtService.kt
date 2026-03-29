@@ -1,14 +1,14 @@
-package com.soyummy.config
+package com.soyummy.token
 
-import io.jsonwebtoken.Claims
-import io.jsonwebtoken.Jwts
-import io.jsonwebtoken.security.Keys
-import io.jsonwebtoken.io.Decoders
 import org.springframework.stereotype.Component
 import org.springframework.beans.factory.annotation.Value
-import java.security.Key
+import io.jsonwebtoken.Claims
+import io.jsonwebtoken.Jwts
+import io.jsonwebtoken.io.Decoders
+import io.jsonwebtoken.security.Keys
+
 import java.util.Date
-import java.util.function.Function
+import javax.crypto.SecretKey
 import com.soyummy.auth.User
 
 @Component
@@ -21,15 +21,15 @@ class JwtService {
         val expirationDate = Date(now.time + 1000 * 60 * 60 * 2)
 
         return Jwts.builder()
-            .setSubject(email)
-            .setIssuedAt(now)
-            .setExpiration(expirationDate)
+            .subject(email)
+            .issuedAt(now)
+            .expiration(expirationDate)
             .signWith(getSigningKey())
             .compact()
     }
 
-    private fun getSigningKey(): Key {
-        val keyBytes = Decoders.BASE64URL.decode(jwtSigningKey)
+    private fun getSigningKey(): SecretKey {
+        val keyBytes = Decoders.BASE64.decode(jwtSigningKey)
         return Keys.hmacShaKeyFor(keyBytes)
     }
 
@@ -37,19 +37,19 @@ class JwtService {
         return extractClaim(token, Claims::getSubject)
     }
 
-    fun <T> extractClaim(token: String, claimsResolver: Function<Claims, T>): T {
+    fun <T> extractClaim(token: String, claimsResolver: (Claims) -> T): T {
         val claims = Jwts.parser()
-            .setSigningKey(getSigningKey())
+            .verifyWith(getSigningKey())
             .build()
-            .parseClaimsJws(token)
-            .body
+            .parseSignedClaims(token)
+            .payload
 
-        return claimsResolver.apply(claims)
+        return claimsResolver(claims)
     }
 
     fun isTokenValid(token: String, user: User): Boolean {
         val username = extractUserName(token)
-        return username == user.email && !isTokenExpired(token)
+        return (username == user.email) && !isTokenExpired(token)
     }
 
     private fun isTokenExpired(token: String): Boolean {

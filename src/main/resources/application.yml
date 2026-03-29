@@ -4,7 +4,12 @@ spring:
       on-profile: docker
   data:
     mongodb:
-      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@mongodb:27017/so-yummy?authSource=admin
+      host: ${MONGO_HOST}
+      port: 27017
+      database: ${MONGO_DB}
+      username: ${MONGO_USER}
+      password: ${MONGO_PASSWORD}
+      authentication-database: admin
 
 token:
   signing:

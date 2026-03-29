@@ -8,6 +8,14 @@ import java.time.LocalDateTime
 
 @Service
 class RecipeService(private val recipeRepository: RecipeRepository) {
+    // Добавьте в RecipeService
+    fun getRecipesCount(): Long = recipeRepository.count()
+
+    fun getCollectionNames(): List<String> {
+        // Нужно внедрить MongoTemplate для этого
+        return emptyList()
+    }
+
     fun getAllRecipes(): List<Recipe> = recipeRepository.findAll()
 
     fun getRecipeById(id: String): Recipe = recipeRepository.findById(id)

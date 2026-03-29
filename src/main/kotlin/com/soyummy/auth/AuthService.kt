@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.authentication.BadCredentialsException
 import org.springframework.security.core.userdetails.UsernameNotFoundException
-import com.soyummy.config.JwtService
+import com.soyummy.token.JwtService
 import com.soyummy.auth.dto.LoginDTO
 import com.soyummy.auth.dto.RegisterDTO
 

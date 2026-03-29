@@ -1,8 +1,8 @@
 package com.soyummy.recipes
 
 import org.springframework.data.mongodb.core.mapping.Document
-import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Field
+import org.springframework.data.annotation.Id
 import java.time.LocalDateTime
 
 @Document(collection = "recipes")
@@ -16,7 +16,7 @@ data class Recipe(
     @Field("category")
     val category: String,
 
-    @Field("area", write = Field.Write.ALWAYS)
+    @Field("area")
     val area: String = "Unknown",
 
     @Field("instructions")
@@ -35,22 +35,22 @@ data class Recipe(
     val time: String,
 
     @Field("popularity")
-    val popularity: Int,
+    val popularity: Int = 0,
 
     @Field("favorites")
-    val favorites: List<String>,
+    val favorites: List<String> = emptyList(),
 
     @Field("likes")
-    val likes: List<String>,
+    val likes: List<String> = emptyList(),
 
     @Field("youtube")
     val youtube: String,
 
     @Field("tags")
-    val tags: List<String>?,
+    val tags: List<String>? = emptyList(),
 
     @Field("ingredients")
-    val ingredients: List<RecipeIngredient>?,
+    val ingredients: List<RecipeIngredient>? = emptyList(),
 
     @Field("createdAt")
     val createdAt: LocalDateTime,

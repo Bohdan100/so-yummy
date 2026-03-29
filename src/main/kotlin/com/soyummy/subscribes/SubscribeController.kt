@@ -17,7 +17,7 @@ import com.soyummy.constants.Constants.VERSION
 @RestController
 @RequestMapping("${VERSION}/subscribes")
 class SubscribeController(private val subscribeService: SubscribeService) {
-    // GET http://localhost:8080/api/v1/subscribes/
+    // GET http://localhost:8080/api/v1/subscribes
     @Secured("ROLE_ADMIN")
     @GetMapping
     fun getAllSubscribes(): ResponseEntity<List<Subscribe>> =
