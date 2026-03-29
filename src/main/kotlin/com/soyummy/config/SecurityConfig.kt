@@ -20,7 +20,7 @@ import com.soyummy.constants.Constants.VERSION
 @EnableMethodSecurity(securedEnabled = true)
 class SecurityConfig(
     private val jwtAuthFilter: JwtAuthFilter,
-    private val customErrorService: CustomErrorService
+    private val securityExceptionHandler: SecurityExceptionHandler
 ) {
     @Bean
     fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
@@ -35,8 +35,8 @@ class SecurityConfig(
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter::class.java)
             .exceptionHandling { exceptions ->
                 exceptions
-                    .authenticationEntryPoint(customErrorService.unauthorizedHandler())
-                    .accessDeniedHandler(customErrorService.accessDeniedHandler())
+                    .authenticationEntryPoint(securityExceptionHandler.unauthorized())
+                    .accessDeniedHandler(securityExceptionHandler.accessDenied())
             }
 
         return http.build()

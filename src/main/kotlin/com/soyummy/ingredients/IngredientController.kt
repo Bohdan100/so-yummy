@@ -10,6 +10,7 @@ import com.soyummy.constants.Constants.VERSION
 @RestController
 @RequestMapping("${VERSION}/ingredients")
 class IngredientController(private val ingredientService: IngredientService) {
+
     //  GET  http://localhost:8080/api/v1/ingredients
     @GetMapping
     fun getAllIngredients(): ResponseEntity<List<Ingredient>> =
@@ -22,21 +23,21 @@ class IngredientController(private val ingredientService: IngredientService) {
 
     //  GET  http://localhost:8080/api/v1/ingredients/search?title=beef
     @GetMapping("/search")
-    fun searchIngredientsByTitle(@RequestParam title: String): ResponseEntity<List<Ingredient>> =
-        ResponseEntity.ok(ingredientService.searchIngredientsByTitle(title))
-
+    fun searchIngredients(@RequestParam(required = false) title: String?): ResponseEntity<List<Ingredient>> =
+        ResponseEntity.ok(ingredientService.searchIngredients(title))
 
     //  POST  http://localhost:8080/api/v1/ingredients
     @PostMapping
-    fun createIngredient(@Valid @RequestBody ingredientCreateDto: IngredientCreateDto): ResponseEntity<Ingredient> =
-        ResponseEntity.status(201).body(ingredientService.createIngredient(ingredientCreateDto))
+    fun createIngredient(@Valid @RequestBody dto: IngredientCreateDto): ResponseEntity<Ingredient> =
+        ResponseEntity.status(201).body(ingredientService.createIngredient(dto))
 
     //  PUT  http://localhost:8080/api/v1/ingredients/{id}
     @PutMapping("/{id}")
     fun updateIngredient(
         @PathVariable id: String,
-        @Valid @RequestBody ingredientUpdateDto: IngredientUpdateDto
-    ): ResponseEntity<Ingredient> = ResponseEntity.ok(ingredientService.updateIngredient(id, ingredientUpdateDto))
+        @Valid @RequestBody dto: IngredientUpdateDto
+    ): ResponseEntity<Ingredient> =
+        ResponseEntity.ok(ingredientService.updateIngredient(id, dto))
 
     //  DELETE  http://localhost:8080/api/v1/ingredients/{id}
     @DeleteMapping("/{id}")

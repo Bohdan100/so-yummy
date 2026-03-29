@@ -7,24 +7,25 @@ import jakarta.servlet.http.HttpServletResponse
 import org.springframework.http.MediaType
 
 @Service
-class CustomErrorService {
-    fun unauthorizedHandler(): AuthenticationEntryPoint {
+    class SecurityExceptionHandler {
+    fun unauthorized(): AuthenticationEntryPoint {
         return AuthenticationEntryPoint { request, response, authException ->
             response.status = HttpServletResponse.SC_UNAUTHORIZED
             response.contentType = MediaType.APPLICATION_JSON_VALUE
             response.writer.write(
                 """
-                {
+                {   
                     "status": 401,
                     "error": "Unauthorized",
-                    "message": "Invalid name or password"
+                    "message": "Invalid name or password",
+                    "timestamp": ${System.currentTimeMillis()}
                 }
                 """.trimIndent()
             )
         }
     }
 
-    fun accessDeniedHandler(): AccessDeniedHandler {
+    fun accessDenied(): AccessDeniedHandler {
         return AccessDeniedHandler { request, response, accessDeniedException ->
             response.status = HttpServletResponse.SC_FORBIDDEN
             response.contentType = MediaType.APPLICATION_JSON_VALUE
@@ -33,7 +34,8 @@ class CustomErrorService {
                 {
                     "status": 403,
                     "error": "Access Denied",
-                    "message": "${accessDeniedException.message}"
+                    "message": "${accessDeniedException.message}",
+                    "timestamp": ${System.currentTimeMillis()}
                 }
                 """.trimIndent()
             )

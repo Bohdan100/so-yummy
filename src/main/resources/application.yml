@@ -10,6 +10,7 @@ spring:
       username: ${MONGO_USER}
       password: ${MONGO_PASSWORD}
       authentication-database: admin
+      auto-index-creation: true
 
 token:
   signing:

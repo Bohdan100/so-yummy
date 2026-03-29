@@ -3,7 +3,7 @@ package com.soyummy.userfavorites
 import org.springframework.stereotype.Service
 import com.soyummy.userfavorites.dto.UserFavoriteCreateDto
 import com.soyummy.userfavorites.dto.UserFavoriteUpdateDto
-import com.soyummy.errors.ResourceNotFoundException
+import com.soyummy.exception.types.ResourceNotFoundException
 import org.bson.types.ObjectId
 
 @Service

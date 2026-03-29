@@ -9,7 +9,7 @@ import jakarta.validation.Valid
 import com.soyummy.userfavorites.dto.UserFavoriteCreateDto
 import com.soyummy.userfavorites.dto.UserFavoriteUpdateDto
 import com.soyummy.auth.User
-import com.soyummy.errors.UnauthorizedException
+import com.soyummy.exception.types.UnauthorizedException
 import com.soyummy.constants.Constants.VERSION
 
 @RestController
