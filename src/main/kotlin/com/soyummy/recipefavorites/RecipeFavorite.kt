@@ -13,7 +13,7 @@ data class RecipeFavorite(
     val id: String? = null,
 
     @Field("recipe")
-    @Indexed(unique = true)
+    @Indexed
     val recipeId: String,
 
     @Field("amount")

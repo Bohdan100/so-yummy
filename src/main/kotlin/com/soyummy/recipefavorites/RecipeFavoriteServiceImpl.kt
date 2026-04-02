@@ -1,29 +1,40 @@
 package com.soyummy.recipefavorites
 
 import org.springframework.stereotype.Service
+import org.springframework.data.domain.Pageable
+import org.bson.types.ObjectId
+
+import com.soyummy.common.dto.PageResponse
+import com.soyummy.common.aggregation.RecipeAggregationHelper
 import com.soyummy.recipefavorites.dto.RecipeFavoriteCreateDto
 import com.soyummy.recipefavorites.dto.RecipeFavoriteUpdateDto
+import com.soyummy.recipefavorites.dto.TopFavoriteDto
 import com.soyummy.exception.types.ResourceNotFoundException
-import org.bson.types.ObjectId
 
 @Service
 class RecipeFavoriteServiceImpl(
-    private val recipeFavoriteRepository: RecipeFavoriteRepository
+    private val recipeFavoriteRepository: RecipeFavoriteRepository,
+    private val aggregationHelper: RecipeAggregationHelper
 ) : RecipeFavoriteService {
 
-    override fun getAllFavorites(): List<RecipeFavorite> = recipeFavoriteRepository.findAll()
+    override fun getAllFavorites(pageable: Pageable): PageResponse<RecipeFavorite> {
+        val page = recipeFavoriteRepository.findAll(pageable)
+
+        return PageResponse.from(page)
+    }
 
     override fun getFavoriteById(id: String): RecipeFavorite = recipeFavoriteRepository.findById(id)
         .orElseThrow { ResourceNotFoundException("Favorite recipe not found with id: $id") }
+
+    override fun getFavoritesByRatingDesc(): List<TopFavoriteDto> {
+        return aggregationHelper.getTopFavoritesByRating()
+    }
 
     override fun getFavoritesByRecipeId(recipeId: String): List<RecipeFavorite> =
         recipeFavoriteRepository.findByRecipeId(ObjectId(recipeId))
 
     override fun getFavoritesByAmount(amount: Int): List<RecipeFavorite> =
         recipeFavoriteRepository.findByAmount(amount)
-
-    override fun getFavoritesByRatingDesc(): List<RecipeFavorite> =
-        recipeFavoriteRepository.findAllByOrderByAmountDesc()
 
     override fun createFavorite(createDto: RecipeFavoriteCreateDto): RecipeFavorite {
         if (createDto.recipeId.isBlank()) {

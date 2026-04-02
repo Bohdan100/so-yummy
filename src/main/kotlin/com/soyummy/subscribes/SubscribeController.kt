@@ -4,6 +4,9 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.security.access.annotation.Secured
 import org.springframework.http.ResponseEntity
 import org.springframework.security.core.annotation.AuthenticationPrincipal
+import org.springframework.data.domain.PageRequest
+import org.springframework.data.domain.Sort
+import com.soyummy.common.dto.PageResponse
 import jakarta.validation.Valid
 
 import com.soyummy.subscribes.dto.SubscribeCreateDto
@@ -15,11 +18,27 @@ import com.soyummy.constants.Constants.VERSION
 @RequestMapping("${VERSION}/subscribes")
 class SubscribeController(private val subscribeService: SubscribeService) {
 
-    // GET http://localhost:8080/api/v1/subscribes
+    // GET http://localhost:8080/api/v1/subscribes?page=3&size=4
     @Secured("ROLE_ADMIN")
     @GetMapping
-    fun getAllSubscribes(): ResponseEntity<List<Subscribe>> =
-        ResponseEntity.ok(subscribeService.getAllSubscribes())
+    fun getAllSubscribes(
+        @RequestParam(defaultValue = "0") page: Int,
+        @RequestParam(defaultValue = "10") size: Int,
+        @RequestParam(defaultValue = "email,asc") sort: String
+    ): ResponseEntity<PageResponse<Subscribe>> {
+        val sortParams = sort.split(",")
+        val sortDirection = if (sortParams.size > 1 && sortParams[1].lowercase() == "desc") {
+            Sort.Direction.DESC
+        } else {
+            Sort.Direction.ASC
+        }
+        val sortField = sortParams[0]
+
+        val pageable = PageRequest.of(page, size, Sort.by(sortDirection, sortField))
+        val result = subscribeService.getAllSubscribes(pageable)
+
+        return ResponseEntity.ok(result)
+    }
 
     // GET http://localhost:8080/api/v1/subscribes/search?email=anna
     @Secured("ROLE_ADMIN")

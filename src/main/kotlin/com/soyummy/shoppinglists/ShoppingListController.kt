@@ -4,8 +4,11 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.security.access.annotation.Secured
 import org.springframework.security.core.annotation.AuthenticationPrincipal
 import org.springframework.http.ResponseEntity
+import org.springframework.data.domain.PageRequest
+import org.springframework.data.domain.Sort
 import jakarta.validation.Valid
 
+import com.soyummy.common.dto.PageResponse
 import com.soyummy.shoppinglists.dto.ShoppingListCreateDto
 import com.soyummy.shoppinglists.dto.ShoppingListUpdateDto
 import com.soyummy.auth.User
@@ -15,19 +18,27 @@ import com.soyummy.constants.Constants.VERSION
 @RequestMapping("${VERSION}/shoppinglists")
 class ShoppingListController(private val shoppingListService: ShoppingListService) {
 
-    //  GET  http://localhost:8080/api/v1/shoppinglists
+    //  GET  http://localhost:8080/api/v1/shoppinglists?page=3&size=4
     @Secured("ROLE_ADMIN")
     @GetMapping
-    fun getAllShoppingLists(): ResponseEntity<List<ShoppingList>> =
-        ResponseEntity.ok(shoppingListService.getAllShoppingLists())
+    fun getAllShoppingLists(
+        @RequestParam(defaultValue = "0") page: Int,
+        @RequestParam(defaultValue = "10") size: Int,
+        @RequestParam(defaultValue = "owner,asc") sort: String
+    ): ResponseEntity<PageResponse<ShoppingList>> {
+        val sortParams = sort.split(",")
+        val sortDirection = if (sortParams.size > 1 && sortParams[1].lowercase() == "desc") {
+            Sort.Direction.DESC
+        } else {
+            Sort.Direction.ASC
+        }
+        val sortField = sortParams[0]
 
-    //  GET  http://localhost:8080/api/v1/shoppinglists/{id}
-    @GetMapping("/{id}")
-    fun getShoppingListByListId(
-        @PathVariable id: String,
-        @AuthenticationPrincipal currentUser: User?
-    ): ResponseEntity<ShoppingList> =
-        ResponseEntity.ok(shoppingListService.getShoppingListById(id, currentUser))
+        val pageable = PageRequest.of(page, size, Sort.by(sortDirection, sortField))
+        val result = shoppingListService.getAllShoppingLists(pageable)
+
+        return ResponseEntity.ok(result)
+    }
 
     //  GET  http://localhost:8080/api/v1/shoppinglists/byOwner/{ownerId}
     @GetMapping("/byOwner/{ownerId}")

@@ -1,11 +1,13 @@
 package com.soyummy.shoppinglists
 
+import org.springframework.data.domain.Pageable
+import com.soyummy.common.dto.PageResponse
 import com.soyummy.shoppinglists.dto.ShoppingListCreateDto
 import com.soyummy.shoppinglists.dto.ShoppingListUpdateDto
 import com.soyummy.auth.User
 
 interface ShoppingListService {
-    fun getAllShoppingLists(): List<ShoppingList>
+    fun getAllShoppingLists(pageable: Pageable): PageResponse<ShoppingList>
     fun getShoppingListById(id: String): ShoppingList
     fun getShoppingListById(id: String, currentUser: User?): ShoppingList
     fun findByOwner(ownerId: String, currentUser: User?): List<ShoppingList>

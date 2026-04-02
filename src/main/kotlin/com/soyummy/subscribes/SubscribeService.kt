@@ -1,11 +1,13 @@
 package com.soyummy.subscribes
 
+import org.springframework.data.domain.Pageable
+import com.soyummy.common.dto.PageResponse
 import com.soyummy.subscribes.dto.SubscribeCreateDto
 import com.soyummy.subscribes.dto.SubscribeUpdateDto
 import com.soyummy.auth.User
 
 interface SubscribeService {
-    fun getAllSubscribes(): List<Subscribe>
+    fun getAllSubscribes(pageable: Pageable): PageResponse<Subscribe>
     fun getSubscribeById(id: String): Subscribe
     fun findByEmail(email: String): List<Subscribe>
     fun isSubscribed(ownerId: String, email: String): Boolean

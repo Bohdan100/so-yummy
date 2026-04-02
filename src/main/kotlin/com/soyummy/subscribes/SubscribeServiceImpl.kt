@@ -1,21 +1,26 @@
 package com.soyummy.subscribes
 
 import org.springframework.stereotype.Service
-import org.bson.types.ObjectId
 import org.springframework.security.access.AccessDeniedException
+import org.springframework.data.domain.Pageable
+import com.soyummy.common.dto.PageResponse
 import com.soyummy.subscribes.dto.SubscribeCreateDto
 import com.soyummy.subscribes.dto.SubscribeUpdateDto
 import com.soyummy.auth.User
 import com.soyummy.auth.Role
 import com.soyummy.exception.types.ResourceNotFoundException
 import com.soyummy.exception.types.UnauthorizedException
+import org.bson.types.ObjectId
 
 @Service
 class SubscribeServiceImpl(
     private val subscribeRepository: SubscribeRepository
 ) : SubscribeService {
 
-    override fun getAllSubscribes(): List<Subscribe> = subscribeRepository.findAll()
+    override fun getAllSubscribes(pageable: Pageable): PageResponse<Subscribe> {
+        val page = subscribeRepository.findAll(pageable)
+        return PageResponse.from(page)
+    }
 
     override fun getSubscribeById(id: String): Subscribe = subscribeRepository.findById(id)
         .orElseThrow { ResourceNotFoundException("Subscription not found with id: $id") }

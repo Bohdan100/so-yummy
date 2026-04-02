@@ -1,22 +1,26 @@
 package com.soyummy.shoppinglists
 
 import org.springframework.stereotype.Service
-import org.bson.types.ObjectId
 import org.springframework.security.access.AccessDeniedException
+import org.springframework.data.domain.Pageable
+import com.soyummy.common.dto.PageResponse
 import com.soyummy.shoppinglists.dto.ShoppingListCreateDto
 import com.soyummy.shoppinglists.dto.ShoppingListUpdateDto
 import com.soyummy.auth.User
 import com.soyummy.auth.Role
 import com.soyummy.exception.types.ResourceNotFoundException
 import com.soyummy.exception.types.UnauthorizedException
+import org.bson.types.ObjectId
 
 @Service
 class ShoppingListServiceImpl(
     private val shoppingListRepository: ShoppingListRepository
 ) : ShoppingListService {
 
-    override fun getAllShoppingLists(): List<ShoppingList> =
-        shoppingListRepository.findAll()
+    override fun getAllShoppingLists(pageable: Pageable): PageResponse<ShoppingList> {
+        val page = shoppingListRepository.findAll(pageable)
+        return PageResponse.from(page)
+    }
 
     override fun getShoppingListById(id: String): ShoppingList =
         shoppingListRepository.findById(id)
