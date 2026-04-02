@@ -104,24 +104,22 @@ The following configurations are required to launch the project:
 
 #### After successful authentication, include the Bearer token in the Authorization header for all subsequent requests:
 
+---
+
 ### 2. Ingredients Endpoints
 
-- **Get All Ingredients with Pagination**:
-  **: [http://localhost:8080/api/v1/ingredients?page=3&size=4&sort=title,asc](http://localhost:8080/api/v1/ingredients?page=3&size=4&sort=title,asc)
+- **Get All Ingredients with Pagination**: [http://localhost:8080/api/v1/ingredients?page=3&size=4&sort=title,asc](http://localhost:8080/api/v1/ingredients?page=3&size=4&sort=title,asc)
     - `GET`: Retrieves the list of all ingredients with pagination by page and size, displaying up to 10 elements per
       page.
 
-- **Get Ingredient by ID**:
-  **: [http://localhost:8080/api/v1/ingredients/{id}](http://localhost:8080/api/v1/ingredients/{id})
+- **Get Ingredient by ID**: [http://localhost:8080/api/v1/ingredients/{id}](http://localhost:8080/api/v1/ingredients/{id})
     - `GET`: Retrieves a single ingredient by its ID, for example "id": "640c2dd963a319ea671e3669".
 
-- **Get Top Ingredients by Usage Frequency**:
-  **: [http://localhost:8080/api/v1/ingredients/top?page=0&size=5]( http://localhost:8080/api/v1/ingredients/top?page=0&size=5)
+- **Get Top Ingredients by Usage Frequency**: [http://localhost:8080/api/v1/ingredients/top?page=0&size=5]( http://localhost:8080/api/v1/ingredients/top?page=0&size=5)
     - `GET`: Retrieves the most frequently used ingredients with pagination by page and size, displaying up to 10
       elements per page.
 
-- **Search Ingredients by Title with Pagination**:
-  **: [http://localhost:8080/api/v1/ingredients/search?title=beef&page=0&size=10](http://localhost:8080/api/v1/ingredients/search?title=beef&page=0&size=10)
+- **Search Ingredients by Title with Pagination**: [http://localhost:8080/api/v1/ingredients/search?title=beef&page=0&size=10](http://localhost:8080/api/v1/ingredients/search?title=beef&page=0&size=10)
     - `GET`: Searches for ingredients containing a specific title or phrase, with pagination by page and size,
       displaying up to 10 elements per page.
 
@@ -145,21 +143,18 @@ sort: Sort field and direction, e.g., title,asc or title,desc
 
 ### 3. Recipes Endpoints
 
-- **Get All Recipes with Pagination
-  **: [http://localhost:8080/api/v1/recipes?page=0&size=10&sort=popularity,desc](http://localhost:8080/api/v1/recipes?page=0&size=10&sort=popularity,desc)
+- **Get All Recipes with Pagination**: [http://localhost:8080/api/v1/recipes?page=0&size=10&sort=popularity,desc](http://localhost:8080/api/v1/recipes?page=0&size=10&sort=popularity,desc)
 - `GET`: Retrieves the list of all recipes with pagination by page and size, displaying up to 10 elements per
   page.
 
 - **Get Recipe by ID**: [http://localhost:8080/api/v1/recipes/{id}](http://localhost:8080/api/v1/recipes/{id})
     - `GET`: Retrieves a single recipe by its ID, for example "id": "640cd5ac2d9fecf12e8897f1".
 
-- **Get Top Recipes by Popularity**:
-  **: [http://localhost:8080/api/v1/recipes/top?page=0&size=8]( http://localhost:8080/api/v1/ingredients/top?page=0&size=8)
+- **Get Top Recipes by Popularity**: [http://localhost:8080/api/v1/recipes/top?page=0&size=8]( http://localhost:8080/api/v1/ingredients/top?page=0&size=8)
     - `GET`: Retrieves the most popularity recipes with pagination by page and size, displaying up to 10 elements per
       page.
 
-- **Search Recipes
-  **: [http://localhost:8080/api/v1/recipes/search?title=pasta&page=0&size=10](http://localhost:8080/api/v1/recipes/search?title=pasta&page=0&size=10)
+- **Search Recipes**: [http://localhost:8080/api/v1/recipes/search?title=pasta&page=0&size=10](http://localhost:8080/api/v1/recipes/search?title=pasta&page=0&size=10)
     - `GET`: Searches for recipes by optional parameters with pagination by page and size, displaying up to 10 elements
       per page:
         - `title`: Partial or full recipe title.
@@ -176,40 +171,35 @@ sort: Sort field and direction, e.g., title,asc or title,desc
 - **Delete Recipe**: [http://localhost:8080/api/v1/recipes/{id}](http://localhost:8080/api/v1/recipes/{id})
     - `DELETE`: Deletes a recipe from the recipe list by ID.
 
+---
+
 ### 4. Recipe Favorites Endpoints
 
-- **Get All Favorites with Pagination**:
-  **: [http://localhost:8080/api/v1/recipefavorites?page=0&size=10&sort=amount,desc](http://localhost:8080/api/v1/recipefavorites?page=0&size=10&sort=amount,desc)
+- **Get All Favorites with Pagination**: [http://localhost:8080/api/v1/recipefavorites?page=0&size=10&sort=amount,desc](http://localhost:8080/api/v1/recipefavorites?page=0&size=10&sort=amount,desc)
 - `GET`: Retrieves a paginated list of all favorite recipes with pagination by page and size, displaying up to 10
   elements per page.
 
-- **Get Favorite by ID**:
-  **: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
+- **Get Favorite by ID**: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
     - `GET`: Retrieves a single favorite record by its ID, for example "id": "6431bb9c1834e4319c89772c".
 
-- **Get Top 10 Favorites by Rating**:
-  **: [http://localhost:8080/api/v1/recipefavorites/rating](http://localhost:8080/api/v1/recipefavorites/rating)
+- **Get Top 10 Favorites by Rating**: [http://localhost:8080/api/v1/recipefavorites/rating](http://localhost:8080/api/v1/recipefavorites/rating)
     - `GET`: Retrieves the top 10 most popular recipes, calculated via aggregation based on their overall rating.
 
-- **Get Favorites by Recipe ID**:
-  **: [http://localhost:8080/api/v1/recipefavorites/byRecipeId/{recipeId}](http://localhost:8080/api/v1/recipefavorites/byRecipeId/{recipeId})
+- **Get Favorites by Recipe ID**: [http://localhost:8080/api/v1/recipefavorites/byRecipeId/{recipeId}](http://localhost:8080/api/v1/recipefavorites/byRecipeId/{recipeId})
     - `GET`: Retrieves a list of favorite records associated with a specific recipe ID.
 
-- **Get Favorites by Amount**:
-  **: [http://localhost:8080/api/v1/recipefavorites/byAmount/{amount}](http://localhost:8080/api/v1/recipefavorites/byAmount/{amount})
+- **Get Favorites by Amount**: [http://localhost:8080/api/v1/recipefavorites/byAmount/{amount}](http://localhost:8080/api/v1/recipefavorites/byAmount/{amount})
     - `GET`: Retrieves favorite records matching a specific "amount" value (e.g., 1, 2, 3, etc.).
 
 - **Create Favorite**: [http://localhost:8080/api/v1/recipefavorites](http://localhost:8080/api/v1/recipefavorites)
     - `POST`: Adds a new recipe to the favorites list. Requires a JSON body with recipeId and amount based on
       `RecipeFavoriteCreateDto`.
 
-- **Update Favorite**:
-  **: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
+- **Update Favorite**: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
     - `PUT`: Updates the amount of an existing favorite record by ID. Requires a JSON body with amount based on
       `RecipeFavoriteUpdateDto`.
 
-- **Delete Favorite**:
-  **: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
+- **Delete Favorite**: [http://localhost:8080/api/v1/recipefavorites/{id}](http://localhost:8080/api/v1/recipefavorites/{id})
     - `DELETE`: Removes a recipe from the favorites list by ID.
 
 Pagination Parameters:
