@@ -20,3 +20,6 @@ logging:
   level:
     org.springframework.data.mongodb: DEBUG
     com.soyummy: DEBUG
+  # Debug and logging
+  file:
+    name: logs/application.log
